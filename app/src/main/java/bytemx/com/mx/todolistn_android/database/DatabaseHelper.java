@@ -1,4 +1,4 @@
-package lennux.com.mx.todolist.database;
+package bytemx.com.mx.todolistn_android.database;
 
 import android.content.Context;
 import android.database.Cursor;

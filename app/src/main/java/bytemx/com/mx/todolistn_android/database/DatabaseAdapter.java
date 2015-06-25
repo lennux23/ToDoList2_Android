@@ -1,9 +1,9 @@
-package lennux.com.mx.todolist.database;
+package bytemx.com.mx.todolistn_android.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
-import lennux.com.mx.todolist.database.DatabaseHelper;
+import bytemx.com.mx.todolistn_android.database.DatabaseHelper;
 
 /**
  * Created by mobilestudio06 on 17/06/15.

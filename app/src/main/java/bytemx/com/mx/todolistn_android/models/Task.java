@@ -1,4 +1,4 @@
-package lennux.com.mx.todolist.models;
+package bytemx.com.mx.todolistn_android.models;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.Context;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import lennux.com.mx.todolist.database.DatabaseAdapter;
+import bytemx.com.mx.todolistn_android.database.DatabaseAdapter;
 
 /**
  * Created by mobilestudio06 on 17/06/15.

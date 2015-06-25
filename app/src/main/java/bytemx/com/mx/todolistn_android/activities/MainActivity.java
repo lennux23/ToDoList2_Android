@@ -1,5 +1,7 @@
 package bytemx.com.mx.todolistn_android.activities;
 
+import android.net.Uri;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,33 +10,21 @@ import android.view.MenuItem;
 import android.view.View;
 
 import bytemx.com.mx.todolistn_android.R;
+import bytemx.com.mx.todolistn_android.fragments.AddTaskFragment;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements AddTaskFragment.OnFragmentInteractionListener{
+
+    private FragmentManager fm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        LayoutInflater inflater = getLayoutInflater();
-        View view = inflater.inflate(R.layout.fragment_add_task,null);
+        fm = getSupportFragmentManager();
 
 
-        setContentView(view);
-        /*songs = Song.getSongs(getApplicationContext());
-        fragmentManager = getSupportFragmentManager();
-
-        if (resourcesType.equals("sw600dp")||resourcesType.equals("sw320dp-land")){
-            fragmentManager.beginTransaction()
-                    .replace(R.id.containerLeft, ListSongsFragment.newInstance(songs))
-                    .commit();
-        } else {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.container, ListSongsFragment.newInstance(songs))
-                    .commit();
-
-        }*/
+        fm.beginTransaction().replace(R.id.container,new AddTaskFragment()).commit();
 
     }
 
@@ -59,5 +49,10 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

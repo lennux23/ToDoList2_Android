@@ -1,4 +1,4 @@
-package lennux.com.mx.todolist.database;
+package bytemx.com.mx.todolistn_android.database;
 
 //all required import files
 
@@ -31,6 +31,8 @@ package lennux.com.mx.todolist.database;
 
         import java.util.ArrayList;
         import java.util.LinkedList;
+
+        import bytemx.com.mx.todolistn_android.database.DatabaseHelper;
 
 public class AndroidDatabaseManager extends Activity implements OnItemClickListener {
 
